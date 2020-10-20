@@ -1,0 +1,15 @@
+.pyc/
+__pycache__/
+
+.idea/
+.history/
+
+.env
+WIP.md
+
+*.sqlite3
+
+*.pid
+
+/node_modules
+/public
