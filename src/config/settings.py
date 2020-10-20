@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'django_filters',
 
+    'cacheops',
+
     'apps.core',
     'apps.api.v1'
 ]
@@ -132,4 +134,15 @@ REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
     'PAGE_SIZE': 10,
     'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend']
+}
+
+CACHEOPS_REDIS = f"redis://:{config('REDIS_PASSWORD')}@{config('REDIS_HOST')}:{config('REDIS_PORT')}/{config('REDIS_DB')}"
+CACHEOPS_DEFAULTS = {
+    'timeout': 60 * 60
+}
+
+CACHEOPS = {
+    'core.movieinfo': {'ops': 'all'},
+    'auth.*': {'ops': 'all'},
+    # '*. *': {},
 }
