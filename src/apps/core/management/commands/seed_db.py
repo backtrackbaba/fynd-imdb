@@ -19,7 +19,7 @@ def save_to_database(movies: json) -> None:
         movie_info.director = movie.get('director')
         movie_info.popularity = movie.get('99popularity')
         movie_info.imdb_score = movie.get('imdb_score')
-        movie_info.genre = movie.get('genre')
+        movie_info.genre = movie.get('genres')
 
         movie_info_list.append(movie_info)
 

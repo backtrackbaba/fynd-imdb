@@ -18,7 +18,7 @@ class MoviesFilter(filters.FilterSet):
     score__lte = filters.NumberFilter(field_name="imdb_score", lookup_expr='lte')
     score__lt = filters.NumberFilter(field_name="imdb_score", lookup_expr='lt')
 
-    genre__contains = CharArrayFilter(field_name='genre', lookup_expr='contains')
+    genre__contains = CharArrayFilter(field_name='genres', lookup_expr='contains')
 
     class Meta:
         model = MovieInfo
