@@ -13,3 +13,10 @@ class MovieInfo(models.Model):
 
     def __str__(self):
         return self.name
+
+    @property
+    def genre_indexing(self):
+        """
+        Used in Elasticsearch indexing.
+        """
+        return [genre for genre in self.genres.all()]
