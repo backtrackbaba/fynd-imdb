@@ -1,9 +1,11 @@
-from django.urls import path
+from django.urls import include, path
+from rest_framework import routers
 
-from apps.core import views
+from apps.api.v1 import views
+
+router = routers.DefaultRouter()
+router.register(r'movies', views.MovieViewSet)
 
 urlpatterns = [
-
-    # The home page
-    path('', views.index, name='api_home'),
+    path('', include(router.urls)),
 ]
