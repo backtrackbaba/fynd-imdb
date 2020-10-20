@@ -10,3 +10,6 @@ class MovieInfo(models.Model):
     popularity = models.FloatField(blank=True)
     imdb_score = models.FloatField(blank=True)
     genre = ArrayField(models.CharField(max_length=1000), default=list, null=True)
+
+    def __str__(self):
+        return self.name

@@ -1,3 +1,10 @@
 from django.contrib import admin
 
-# Register your models here.
+from apps.core.models import MovieInfo
+
+
+class MovieAdmin(admin.ModelAdmin):
+    list_display = ('name', 'popularity', 'imdb_score')
+
+
+admin.site.register(MovieInfo, MovieAdmin)
