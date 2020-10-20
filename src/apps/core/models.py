@@ -1,3 +1,12 @@
+from django.contrib.postgres.fields import ArrayField
 from django.db import models
 
+
 # Create your models here.
+
+class MovieInfo(models.Model):
+    name = models.TextField(primary_key=True, max_length=255)
+    director = models.TextField(max_length=255, blank=True)
+    popularity = models.FloatField(blank=True)
+    imdb_score = models.FloatField(blank=True)
+    genre = ArrayField(models.CharField(max_length=1000), default=list, null=True)
