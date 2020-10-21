@@ -36,3 +36,4 @@ exec gunicorn ${WSGI_MODULE}:application \
   --log-file=$LOGFILE \
   --threads=$NUM_THREADS \
   --worker-class=gthread
+
