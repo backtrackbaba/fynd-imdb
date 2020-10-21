@@ -19,7 +19,8 @@ WSGI_MODULE=config.wsgi
 
 cd $PROJECT_SRC || exit
 
-#source /opt/projects/fynd-imdb/runtime-environments/fynd/bin/activate
+source /opt/projects/fynd-imdb/runtime-environments/fynd/bin/activate
+
 export PYTHONPATH="$PYTHONPATH:$PROJECT_SRC"
 
 source /opt/projects/fynd-imdb/apps/fynd-imdb/.env
