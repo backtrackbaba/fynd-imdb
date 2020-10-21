@@ -1,6 +1,6 @@
 #!/bin/bash
 
-NAME="dt-web-site"
+NAME="fynd-imdb"
 PROJECT_SRC="/opt/projects/fynd-imdb/apps/fynd-imdb/src"
 LOGFILE="/opt/projects/fynd-imdb/data/logs/gunicorn/gunicorn.log"
 
