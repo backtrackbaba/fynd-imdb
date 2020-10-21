@@ -29,6 +29,10 @@ DEBUG = config('DEBUG', default=False, cast=bool)
 
 ALLOWED_HOSTS = ['imdb.saiprasad.io', 'localhost', 'fynd.saiprasad.io']
 
+INTERNAL_IPS = [
+    '127.0.0.1',
+]
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -186,3 +190,8 @@ CACHEOPS = {
     'auth.*': {'ops': 'all'},
     # '*. *': {},
 }
+
+if DEBUG:
+    INSTALLED_APPS += ['debug_toolbar']
+
+    MIDDLEWARE = ['debug_toolbar.middleware.DebugToolbarMiddleware'] + MIDDLEWARE
