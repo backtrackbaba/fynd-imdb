@@ -27,7 +27,7 @@ source /opt/projects/fynd-imdb/apps/fynd-imdb/.env
 
 echo "Starting $NAME with $NUM_WORKERS workers and $NUM_THREADS threads!"
 
-exec gunicorn ${WSGI_MODULE}:application \
+exec ddtrace-run gunicorn ${WSGI_MODULE}:application \
   --name $NAME \
   --workers $NUM_WORKERS \
   --user=$USER --group=$GROUP \
