@@ -37,4 +37,5 @@ exec ddtrace-run gunicorn ${WSGI_MODULE}:application \
   --timeout 300 \
   --log-file=$LOGFILE \
   --threads=$NUM_THREADS \
-  --worker-class=gthread
+  --worker-class=gthread \
+  --statsd-host=localhost:8125
