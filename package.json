@@ -1,0 +1,9 @@
+{
+  "name": "fynd-imdb",
+  "version": "1.0.0",
+  "dependencies": {
+    "node-sass-chokidar": "1.5.0",
+    "uglify-js": "3.11.3",
+    "yuglify": "2.0.0"
+  }
+}

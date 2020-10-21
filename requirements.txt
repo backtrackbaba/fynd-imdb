@@ -4,3 +4,5 @@ python-decouple==3.3
 djangorestframework==3.12.1
 django-filter==2.4.0
 django-cacheops==5.0.1
+gunicorn[gthread]==20.0.4
+django-pipeline==2.0.5
