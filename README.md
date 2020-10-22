@@ -4,13 +4,27 @@
 
 ## Tech Stack
 
-<img src="https://cdn.svgporn.com/logos/python.svg" width="100" height="100"/> 
-<img src="https://cdn.svgporn.com/logos/django.svg" width="100" height="100"/> 
-<img src="https://cdn.svgporn.com/logos/postgresql.svg" width="100" height="100"/> 
-<img src="https://www.django-rest-framework.org/img/logo.png" width="200" height="100"/>
-<img src="https://cdn.svgporn.com/logos/gunicorn.svg" width="100" height="100"/> 
-<img src="https://cdn.svgporn.com/logos/nginx.svg" width="100" height="100"/> 
-<img src="https://cdn.svgporn.com/logos/digital-ocean.svg" width="100" height="100"/> 
+<table>
+  <tr>
+    <td>Python</td>
+    <td>Django</td>
+    <td>PostgreSQL</td>
+    <td>Django Rest Framework</td>
+    <td>Gunicorn</td>
+    <td>Nginx</td>
+    <td>DigitalOcean</td>
+  </tr>
+  <tr>
+    <td valign="top"><img src="https://cdn.svgporn.com/logos/python.svg" width="100" height="100"/></td>
+    <td valign="top"><img src="https://cdn.svgporn.com/logos/django.svg" width="100" height="100"/></td>
+    <td valign="top"><img src="https://cdn.svgporn.com/logos/postgresql.svg" width="100" height="100"/></td>
+    <td valign="top"><img src="https://www.django-rest-framework.org/img/logo.png" width="200" height="100"/></td>
+    <td valign="top"><img src="https://cdn.svgporn.com/logos/gunicorn.svg" width="100" height="100"/></td>
+    <td valign="top"><img src="https://cdn.svgporn.com/logos/nginx.svg" width="100" height="100"/></td>
+    <td valign="top"><img src="https://cdn.svgporn.com/logos/digital-ocean.svg" width="100" height="100"/></td>
+  </tr>
+ </table>
+
 
 ## Local Installation
 
