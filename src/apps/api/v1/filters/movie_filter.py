@@ -8,6 +8,9 @@ class CharArrayFilter(filters.BaseCSVFilter, filters.CharFilter):
 
 
 class MoviesFilter(filters.FilterSet):
+    """
+    All the filters along with their respective ORM equivalent expressions are mapped over here
+    """
     popularity__gte = filters.NumberFilter(field_name="popularity", lookup_expr='gte')
     popularity__gt = filters.NumberFilter(field_name="popularity", lookup_expr='gt')
     popularity__lte = filters.NumberFilter(field_name="popularity", lookup_expr='lte')

@@ -1,3 +1,6 @@
+# Script to build all the static assets
+# This script also compiles all the SAAS files and generates equivalent CSS files
+
 PROJECT_SRC="/opt/projects/fynd-imdb/apps/fynd-imdb/src"
 NODE_SAAS_CHOKIDAR_BINARY="/opt/projects/fynd-imdb/apps/fynd-imdb/node_modules/.bin/node-sass-chokidar"
 

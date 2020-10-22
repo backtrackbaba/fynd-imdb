@@ -27,6 +27,9 @@ def save_to_database(movies: json) -> None:
 
 
 class Command(BaseCommand):
+    """
+    Command to seed the database with the given JSON file.
+    """
     help = 'Seeds database with movie data from the given JSON file'
 
     def handle(self, *args, **kwargs):

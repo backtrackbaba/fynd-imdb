@@ -1,9 +1,9 @@
 import django_filters
 from rest_framework import viewsets, filters
 
-from apps.api.v1.filters.movies_filter import MoviesFilter
+from apps.api.v1.filters.movie_filter import MoviesFilter
 from apps.api.v1.permissions.movie_permission import CustomIsAuthenticatedOrReadOnly
-from apps.api.v1.serializers.serializers import MovieSerializer
+from apps.api.v1.serializers.movie_serializer import MovieSerializer
 from apps.core.models import MovieInfo
 
 

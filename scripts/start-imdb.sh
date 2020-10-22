@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Script to run the application using Gunicorn.
+# It automatically calculates the no of cores of the system and derives the number of Workers to use and on that basis
+# decides the number of threads.
+
 NAME="fynd-imdb"
 PROJECT_SRC="/opt/projects/fynd-imdb/apps/fynd-imdb/src"
 LOGFILE="/opt/projects/fynd-imdb/data/logs/gunicorn/gunicorn.log"

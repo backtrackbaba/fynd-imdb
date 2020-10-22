@@ -19,11 +19,11 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path("", include("apps.core.urls")),  # Company App
-    path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+    path("", include("apps.core.urls")),  # Core App URL's
+    path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),  # Auth URL's used by DRF
     path("api/v1/", include("apps.api.v1.urls")),  # API App
-    path('admin/', admin.site.urls),
+    path('admin/', admin.site.urls),  # Admin App
 ]
 
 if settings.DEBUG:
-    urlpatterns += [path('__debug__/', include(debug_toolbar.urls))]
+    urlpatterns += [path('__debug__/', include(debug_toolbar.urls))]  # Django Debug Toolbar URL's when in debug
